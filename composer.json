@@ -1,0 +1,28 @@
+{
+    "name": "novactive/ezsiteaccessmatchers-bundle",
+    "description": "eZ publish Bundle providing additional siteaccess matchers",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillaume Maïssa",
+            "email": "g.maissa@novactive.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Novactive\\EzSiteaccessMatchersBundle\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Novactive\\EzSiteaccessMatchersBundle\\Tests\\": "tests/"}
+    },
+    "require": {
+        "symfony/framework-bundle": "^2.0 || ^3.0",
+        "ezsystems/ezpublish-kernel": "^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpmd/phpmd": "^2.0",
+        "sebastian/phpcpd": "^4.0",
+        "phpunit/phpunit": "^5.0|^6.0|^7.0"
+    }
+}

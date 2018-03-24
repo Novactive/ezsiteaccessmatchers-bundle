@@ -1,0 +1,14 @@
+parameters:
+    nova.ez.sitematcher.prefixedhostelement.class: Novactive\EzSiteaccessMatchersBundle\Matcher\PrefixedHostElement
+    nova.ez.sitematcher.suffixedhostelement.class: Novactive\EzSiteaccessMatchersBundle\Matcher\SuffixedHostElement
+    nova.ez.sitematcher.extendedhostelement.class: Novactive\EzSiteaccessMatchersBundle\Matcher\ExtendedHostElement
+
+services:
+    nova.ez.sitematcher.prefixedhostelement:
+        class: "%nova.ez.sitematcher.prefixedhostelement.class%"
+
+    nova.ez.sitematcher.suffixedhostelement:
+        class: "%nova.ez.sitematcher.suffixedhostelement.class%"
+
+    nova.ez.sitematcher.extendedhostelement:
+        class: "%nova.ez.sitematcher.extendedhostelement.class%"

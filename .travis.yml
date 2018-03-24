@@ -29,8 +29,10 @@ before_install:
   - composer self-update
 
 install:
-  - travis_retry composer install --no-interaction
+  - travis_retry php -dmemory_limit=-1 /home/travis/.phpenv/shims/composer install --no-interaction
 
 script:
   - php vendor/bin/phpunit ${PHPUNIT_ARGS}
+  - php vendor/bin/phpcs --standard=PSR2 src
+  - php vendor/bin/phpcpd src
 

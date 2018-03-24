@@ -81,8 +81,7 @@ class ExtendedHostElement implements VersatileMatcher, Matcher
         $this->elementNumber = (int)$elementNumber;
 
         if (isset($matchingConfiguration['replacements'])) {
-            if (
-                !isset($matchingConfiguration['replacements']['pattern']) ||
+            if (!isset($matchingConfiguration['replacements']['pattern']) ||
                 !isset($matchingConfiguration['replacements']['replacement'])
             ) {
                 throw new InvalidArgumentException(
@@ -180,7 +179,7 @@ class ExtendedHostElement implements VersatileMatcher, Matcher
     private function preparePatterns($patterns)
     {
         if (is_array($patterns)) {
-            foreach($patterns as $key => $value) {
+            foreach ($patterns as $key => $value) {
                 $patterns[$key] = sprintf('/%s/', $value);
             }
         } else {
@@ -189,5 +188,4 @@ class ExtendedHostElement implements VersatileMatcher, Matcher
 
         return $patterns;
     }
-
 }

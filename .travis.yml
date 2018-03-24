@@ -25,6 +25,7 @@ cache:
     - vendor
 
 before_install:
+  - which composer
   - composer self-update
 
 install:

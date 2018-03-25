@@ -72,7 +72,7 @@ class SuffixedHostElement implements VersatileMatcher, Matcher
 
     public function __sleep()
     {
-        return array('elementNumber', 'hostElements', 'prefix');
+        return array('elementNumber', 'hostElements', 'suffix');
     }
 
     /**

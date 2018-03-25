@@ -1,5 +1,8 @@
 # eZ (platform) Siteaccess Matchers Bundle
 
+ master | [![Build Status](https://travis-ci.org/Novactive/ezsiteaccessmatchers-bundle.svg?branch=master)](https://travis-ci.org/Novactive/ezsiteaccessmatchers-bundle)|
+--------|---------|
+
 ## About
 
 This eZ publish bundle provides additional siteaccess matchers, usefull for mapping siteacesses with Platform.sh dynamic environments urls.

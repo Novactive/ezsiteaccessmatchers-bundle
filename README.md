@@ -18,7 +18,7 @@ The new matchers are :
 The recommended way to install this bundle is through [Composer](http://getcomposer.org/). Just run :
 
 ```bash
-composer require novactive/ezsiteaccessmatcher-bundle
+composer require novactive/ezsiteaccessmatchers-bundle
 ```
 
 Register the bundle in the kernel of your application :
